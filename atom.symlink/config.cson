@@ -4,7 +4,6 @@
   welcome:
     showOnStartup: false
   core:
-    projectHome: "/Users/hugoduraes/Development"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
