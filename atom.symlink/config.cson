@@ -1,0 +1,14 @@
+"*":
+  "exception-reporting":
+    userId: "7180cbaf-7e6b-cc03-9e11-c96eccc0b1ea"
+  welcome:
+    showOnStartup: false
+  core:
+    projectHome: "/Users/hugoduraes/Development"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 12
