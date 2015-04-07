@@ -2,9 +2,16 @@
 #
 
 [hub]
-        protocol = https
+  protocol = https
+
+[alias]
+  merge-no-ff = merge --no-ff
+  pull-no-ff = pull --no-ff	
+  glog = log --graph --decorate --all
+
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+  name = AUTHORNAME
+  email = AUTHOREMAIL
+
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+  helper = GIT_CREDENTIAL_HELPER
