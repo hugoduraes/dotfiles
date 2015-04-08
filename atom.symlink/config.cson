@@ -6,9 +6,12 @@
   core:
     themes: [
       "atom-dark-ui"
-      "atom-dark-syntax"
+      "monokai"
     ]
   editor:
     invisibles: {}
     fontSize: 12
   react: {}
+  "tree-view":
+    hideIgnoredNames: true
+  "autocomplete-plus": {}
