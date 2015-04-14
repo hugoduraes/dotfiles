@@ -16,3 +16,10 @@
     hideIgnoredNames: true
   "autocomplete-plus":
     confirmCompletion: "tab and enter"
+  "atom-beautify":
+    _analyticsUserId: "7e8fbc9a-7bc6-4a03-a4e9-9e39fa69e6f6"
+    beautifyOnSave: true
+    css_newline_between_rules: true
+    css_preserve_newlines: true
+    analytics: false
+    muteUnsupportedLanguageErrors: true
