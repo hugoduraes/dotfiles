@@ -8,6 +8,9 @@
       "atom-dark-ui"
       "monokai"
     ]
+    disabledPackages: [
+      "atom-beautify"
+    ]
   editor:
     invisibles: {}
     fontSize: 12
