@@ -8,22 +8,45 @@
       "atom-dark-ui"
       "monokai"
     ]
-    disabledPackages: [
-      "atom-beautify"
-    ]
+    audioBeep: false
+    disabledPackages: []
   editor:
-    invisibles: {}
+    invisibles:
+      {}
     fontSize: 12
-  react: {}
+    showIndentGuide: true
+  react:
+    {}
   "tree-view":
     hideIgnoredNames: true
-  "autocomplete-plus":
-    confirmCompletion: "tab and enter"
-  "atom-beautify":
-    _analyticsUserId: "7e8fbc9a-7bc6-4a03-a4e9-9e39fa69e6f6"
-    beautifyOnSave: true
-    css_newline_between_rules: true
-    css_preserve_newlines: true
-    analytics: false
-    muteUnsupportedLanguageErrors: true
-    js_brace_style: "none"
+  "project-manager":
+    sortBy: "title"
+  "linter-jscs":
+    harmony: true
+    preset: "google"
+    excludeFiles: [
+      "node_modules/**"
+    ]
+    fileExtensions: [
+      ".js"
+      ".jsx"
+    ]
+    esnext: true
+  linter:
+    clearOnChange: true
+    showErrorInline: false
+    showInfoMessages: true
+    statusBar: "Show all errors"
+  csslint:
+    hideOnNoErrors: true
+    validateOnChange: true
+  "linter-csslint":
+    {}
+  "linter-less":
+    strictMath: true
+  "linter-jshint":
+    {}
+  "linter-jsxhint":
+    harmony: true
+  "jscs-fixer":
+    harmony: true
