@@ -6,7 +6,7 @@
 
 [alias]
   merge-no-ff = merge --no-ff
-  pull-no-ff = pull --no-ff	
+  pull-no-ff = pull --no-ff
   glog = log --graph --decorate --all
 
 [user]
@@ -15,3 +15,15 @@
 
 [credential]
   helper = GIT_CREDENTIAL_HELPER
+
+[core]
+	excludesfile = /path/to/.gitignore_global
+
+[push]
+	default = simple
+
+[merge]
+	tool = opendiff
+
+[diff]
+	external = opendiff
