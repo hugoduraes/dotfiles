@@ -6,6 +6,10 @@ export NVM_DIR="/Users/hugoduraes/.nvm"
 
 export EDITOR=/usr/bin/nano
 
+if [ -f ~/.git-completion ]; then
+  . ~/.git-completion
+fi
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
