@@ -11,12 +11,10 @@
     audioBeep: false
     disabledPackages: []
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     fontSize: 12
     showIndentGuide: true
-  react:
-    {}
+  react: {}
   "tree-view":
     hideIgnoredNames: true
   "project-manager":
@@ -32,21 +30,29 @@
       ".jsx"
     ]
     esnext: true
+    verbose: true
   linter:
-    clearOnChange: true
-    showErrorInline: false
     showInfoMessages: true
     statusBar: "Show all errors"
+    showErrorInline: false
+    ignoredLinterErrors: [
+      "jscs"
+      "jsxhint"
+    ]
+    subtleLinterErrors: [
+      "jshint"
+    ]
+    clearOnChange: true
   csslint:
     hideOnNoErrors: true
     validateOnChange: true
-  "linter-csslint":
-    {}
+  "linter-csslint": {}
   "linter-less":
     strictMath: true
-  "linter-jshint":
-    {}
+  "linter-jshint": {}
   "linter-jsxhint":
     harmony: true
   "jscs-fixer":
     harmony: true
+    jsx: true
+  docblockr: {}
