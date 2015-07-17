@@ -56,3 +56,5 @@
     harmony: true
     jsx: true
   docblockr: {}
+  "file-icons":
+    onChanges: true
