@@ -9,6 +9,7 @@
       "monokai"
     ]
     audioBeep: false
+    openEmptyEditorOnStart: false
   editor:
     invisibles: {}
     fontSize: 12
@@ -31,10 +32,11 @@
     esnext: true
     verbose: true
     displayAs: "warning"
+    fixOnSave: true
+    onlyConfig: true
   linter:
     showInfoMessages: true
     statusBar: "Show all errors"
-    showErrorInline: false
     ignoredLinterErrors: [
       "jscs"
       "jsxhint"
@@ -43,6 +45,7 @@
       "jshint"
     ]
     clearOnChange: true
+    showErrorTabProject: false
   csslint:
     hideOnNoErrors: true
     validateOnChange: true
@@ -58,3 +61,4 @@
   docblockr: {}
   "file-icons":
     onChanges: true
+  "highlight-line": {}
