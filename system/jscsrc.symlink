@@ -1,5 +1,25 @@
 {
   "preset": "google",
+  "disallowMultipleVarDecl": null,
+  "validateIndentation": 2,
+  "validateQuoteMarks": "'",
+  "disallowTrailingComma": true,
+  "disallowSpaceBeforeComma": true,
+  "disallowSpacesInsideParentheses": true,
+  "disallowMixedSpacesAndTabs": true,
+  "disallowTrailingWhitespace": true,
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-  "maximumLineLength": null
+  "requireLineBreakAfterVariableAssignment": true,
+  "disallowSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true
+  },
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningCurlyBrace": true
+  },
+  "disallowSpacesInFunctionExpression": {
+    "beforeOpeningRoundBrace": true
+  },
+  "requireSpacesInFunctionExpression": {
+      "beforeOpeningCurlyBrace": true
+  }
 }
