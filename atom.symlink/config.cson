@@ -10,10 +10,16 @@
     ]
     audioBeep: false
     openEmptyEditorOnStart: false
+    ignoredNames: [
+      ".git"
+      "node_modules"
+    ]
   editor:
     invisibles: {}
     fontSize: 12
     showIndentGuide: true
+    tabType: "soft"
+    tabLength: 4
   react: {}
   "tree-view":
     hideIgnoredNames: true
@@ -29,11 +35,11 @@
       ".js"
       ".jsx"
     ]
-    esnext: true
     verbose: true
     displayAs: "warning"
-    fixOnSave: true
     onlyConfig: true
+    esnext: true
+    fixOnSave: true
   linter:
     showInfoMessages: true
     statusBar: "Show all errors"
@@ -42,10 +48,10 @@
       "jsxhint"
     ]
     subtleLinterErrors: [
-      "jshint"
+      "eslint"
     ]
     clearOnChange: true
-    showErrorTabProject: false
+    statusIconScope: "File"
   csslint:
     hideOnNoErrors: true
     validateOnChange: true
@@ -62,3 +68,7 @@
   "file-icons":
     onChanges: true
   "highlight-line": {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "markdown-preview":
+    useGitHubStyle: true
