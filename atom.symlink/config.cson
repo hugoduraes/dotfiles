@@ -1,74 +1,17 @@
 "*":
   "exception-reporting":
-    userId: "7180cbaf-7e6b-cc03-9e11-c96eccc0b1ea"
+    userId: "1a2f30c8-ad24-4ae3-6f2c-e18290713498"
   welcome:
     showOnStartup: false
-  core:
-    themes: [
-      "atom-dark-ui"
-      "monokai"
-    ]
-    audioBeep: false
-    openEmptyEditorOnStart: false
-    ignoredNames: [
-      ".git"
-      "node_modules"
-    ]
+  core: {}
   editor:
     invisibles: {}
-    fontSize: 12
     showIndentGuide: true
-    tabType: "soft"
-    tabLength: 4
-  react: {}
-  "tree-view":
-    hideIgnoredNames: true
-  "project-manager":
-    sortBy: "title"
-  "linter-jscs":
-    harmony: true
-    preset: "google"
-    excludeFiles: [
-      "node_modules/**"
-    ]
-    fileExtensions: [
-      ".js"
-      ".jsx"
-    ]
-    verbose: true
-    displayAs: "warning"
-    onlyConfig: true
-    esnext: true
-    fixOnSave: true
-  linter:
-    showInfoMessages: true
-    statusBar: "Show all errors"
-    ignoredLinterErrors: [
-      "jscs"
-      "jsxhint"
-    ]
-    subtleLinterErrors: [
-      "eslint"
-    ]
-    clearOnChange: true
-    statusIconScope: "File"
-  csslint:
-    hideOnNoErrors: true
-    validateOnChange: true
-  "linter-csslint": {}
-  "linter-less":
-    strictMath: true
-  "linter-jshint": {}
-  "linter-jsxhint":
-    harmony: true
-  "jscs-fixer":
-    harmony: true
-    jsx: true
-  docblockr: {}
   "file-icons":
+    coloured: false
     onChanges: true
-  "highlight-line": {}
-  "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
+  docblockr: {}
+  "language-babel": {}
+  "linter-eslint": {}
   "markdown-preview":
     useGitHubStyle: true
