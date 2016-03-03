@@ -10,8 +10,8 @@
   glog = log --graph --decorate --all
 
 [user]
-  name = AUTHORNAME
-  email = AUTHOREMAIL
+	name = AUTHORNAME
+	email = AUTHOREMAIL
 
 [credential]
   helper = GIT_CREDENTIAL_HELPER
@@ -27,3 +27,20 @@
 
 [diff]
 	external = opendiff
+
+[gitflow "hotfix.finish"]
+	message = Hotfix %tag%
+
+[gitflow "release.finish"]
+	message = Release %tag%
+
+[gitflow "prefix"]
+    feature = feature/
+    bugfix = bugfix/
+    release = release/
+    hotfix = hotfix/
+    support = support/
+    versiontag = v
+
+[gitflow "path"]
+	hooks = /path/to/git-flow-hooks
