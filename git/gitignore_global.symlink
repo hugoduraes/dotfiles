@@ -1,4 +1,5 @@
 # Folder view configuration files
+*~
 .DS_Store
 Desktop.ini
 
@@ -14,6 +15,3 @@ Thumbs.db
 node_modules
 npm-debug.log
 bower_components
-
-# JSHint
-jshint-output.log
