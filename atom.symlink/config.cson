@@ -5,6 +5,7 @@
     ]
   docblockr: {}
   editor:
+    fontSize: 12
     invisibles: {}
     showIndentGuide: true
     tabLength: 4
@@ -24,6 +25,12 @@
   "linter-eslint": {}
   "markdown-preview":
     useGitHubStyle: true
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "project-manager": {}
   "tree-view":
     hideIgnoredNames: true
