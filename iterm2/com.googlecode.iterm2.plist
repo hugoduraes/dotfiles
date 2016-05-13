@@ -308,11 +308,11 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1409 110 445 280 0 0 1920 1057 </string>
+	<string>691 1247 642 284 -254 900 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 110 924 485 0 0 1280 777 </string>
+	<string>-1740 692 924 485 -1920 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>331 194 766 451 0 0 1920 1057 </string>
+	<string>3 414 570 451 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1018,7 +1018,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.049718011170625687</real>
+			<real>0.2049671858549118</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1041,12 +1041,10 @@
 			<string>/Users/hugoduraes</string>
 		</dict>
 	</array>
-	<key>NoSyncHaveShownPromoWithId_4</key>
-	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>477621213.89459902</real>
+	<real>482978360.29324502</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>484612339.21334302</real>
+	<real>484694887.42177498</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1109,7 +1107,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-10T21:14:18Z</date>
+	<date>2016-05-11T16:33:10Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
