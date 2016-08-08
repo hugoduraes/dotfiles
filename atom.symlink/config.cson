@@ -3,10 +3,11 @@
     allowPendingPaneItems: false
     disabledPackages: [
       "metrics"
+      "atom-linter-node-dependencies"
     ]
   docblockr: {}
   editor:
-    fontSize: 12
+    fontSize: 11
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
@@ -26,7 +27,11 @@
   "markdown-preview":
     useGitHubStyle: true
   minimap:
+    absoluteMode: true
+    adjustMinimapWidthOnlyIfSmaller: false
     plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
       "highlight-selected": true
