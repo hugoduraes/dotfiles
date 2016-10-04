@@ -5,7 +5,9 @@
       "metrics"
       "atom-linter-node-dependencies"
     ]
-  docblockr: {}
+  docblockr:
+    param_description: false
+    return_description: false
   editor:
     fontSize: 11
     invisibles: {}
@@ -23,7 +25,8 @@
   linter:
     errorPanelHeight: 201
     statusIconScope: "File"
-  "linter-eslint": {}
+  "linter-eslint":
+    fixOnSave: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
