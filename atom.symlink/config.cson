@@ -5,6 +5,7 @@
       "metrics"
       "atom-linter-node-dependencies"
     ]
+    telemetryConsent: "limited"
   docblockr:
     param_description: false
     return_description: false
@@ -39,7 +40,8 @@
       "find-and-replaceDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
-  "project-manager": {}
+  "project-manager":
+    sortBy: "title"
   "tree-view":
     hideIgnoredNames: true
   welcome:
@@ -47,3 +49,6 @@
 ".ini.source":
   editor:
     tabLength: 4
+".source.yaml":
+  editor:
+    autoIndentOnPaste: true
