@@ -1,0 +1,32 @@
+---
+- name: update homebrew
+  homebrew: update_homebrew=yes
+
+- name: tap fonts
+  homebrew_tap: tap=caskroom/fonts state=present
+
+- name: install libraries with homebrew
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - curl
+    - git
+    - ssh-copy-id
+    - wget
+    - yarn
+    - zsh
+    - zsh-completions
+
+- name: install apps with homebrew cask
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - atom
+    - finicky
+    - google-chrome
+    - iterm2
+    - skype
+    - sourcetree
+    - spectacle
+    - spotify
+
+- name: cleanup homebrew packages
+  command: brew cleanup

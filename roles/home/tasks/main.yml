@@ -1,0 +1,36 @@
+---
+- include: nvm.yml  
+  
+- name: create development folder
+  file: path=~/Development state=directory
+
+- name: remove existing dotfiles
+  file: path={{ item }} state=absent
+  with_items:
+    - ~/.aliases
+    - ~/.gitconfig
+    - ~/.gitignore
+    - ~/.zshrc
+
+- name: deploy dotfiles
+  template: src=../templates/{{ item }} dest=~/.{{ item }}
+  with_items:
+    - aliases
+    - gitconfig
+    - gitignore
+    - zshrc
+
+- name: look for finicky dotfile
+  stat: path=~/.finicky.js
+  register: finicky
+
+- name: deploy finicky dotfile
+  template: src=templates/finicky.js dest=~/.finicky.js
+  when: not finicky.stat.exists
+
+- name: link atom config file
+  file: src={{ playbook_dir }}/configs/atom/config.cson dest=~/.atom/config.cson state=link force=yes
+  
+- name: set zsh as default shell
+  shell: chsh -s /bin/zsh
+  become: true

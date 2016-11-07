@@ -1,0 +1,24 @@
+---
+- name: disable macos dashboard
+  shell: defaults write com.apple.dashboard mcx-disabled -bool true
+
+- name: save screenshots to downloads
+  shell: defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+
+- name: disable shadow in screenshots
+  shell: defaults write com.apple.screencapture disable-shadow -bool true
+
+- name: minimize windows into their application's icon
+  shell: defaults write com.apple.dock minimize-to-application -bool true
+
+- name: automatically hide and show the dock
+  shell: defaults write com.apple.dock autohide -bool true
+
+- name: set the icon size of dock items to 28 pixels
+  shell: defaults write com.apple.dock tilesize -int 28
+
+- name: set the magnification icon size of dock items to 84 pixels
+  shell: defaults write com.apple.dock largesize -int 84
+
+- name: restart dock
+  shell: killall Dock

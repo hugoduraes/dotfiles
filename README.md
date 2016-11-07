@@ -1,14 +1,29 @@
-# Hugo Durães' dotfiles
+# Hugo's dotfiles
 
-These are config files to set up a system the way I like it.
+## Prerequisites
+
+Install [Homebrew](http://brew.sh):
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+    
+Install [Homebrew Cask](https://caskroom.github.io):
+
+```
+brew tap caskroom/cask
+```
+
+Install [Ansible](https://www.ansible.com/get-started):
+
+```
+brew install ansible
+```
 
 ## Install
-
-Run this:
 
 ```
 git clone https://github.com/hugoduraes/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-chmod +x script/bootstrap
-script/bootstrap
+./install
 ```
