@@ -4,6 +4,7 @@
     disabledPackages: [
       "metrics"
       "atom-linter-node-dependencies"
+      "whitespace"
     ]
     telemetryConsent: "limited"
   docblockr:
@@ -13,7 +14,6 @@
     fontSize: 11
     invisibles: {}
     showIndentGuide: true
-    tabType: "soft"
   "exception-reporting":
     userId: "1a2f30c8-ad24-4ae3-6f2c-e18290713498"
   "file-icons":
