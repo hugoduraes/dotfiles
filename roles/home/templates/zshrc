@@ -36,3 +36,6 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
+
+# Activate ZSH completetions
+fpath=(/usr/local/share/zsh-completions $fpath)
