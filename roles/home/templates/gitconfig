@@ -5,20 +5,14 @@
   glog = log --graph --decorate --all
 
 [user]
-	name = Hugo Durães
-	email = hugoduraes@gmail.com
+  name = Hugo Durães
+  email = hugoduraes@gmail.com
 
 [credential]
   helper = osxkeychain
 
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 
 [push]
-	default = simple
-
-[merge]
-	tool = opendiff
-
-[diff]
-	external = opendiff
+  default = simple
