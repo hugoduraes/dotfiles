@@ -21,6 +21,9 @@
     onChanges: true
   "git-diff":
     showIconsInEditorGutter: true
+  "git-plus":
+    general:
+      analytics: false
   "highlight-line": {}
   "language-babel": {}
   linter:
