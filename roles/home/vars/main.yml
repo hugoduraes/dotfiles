@@ -1,0 +1,2 @@
+---
+git_email: "{{ vault_git_email }}"

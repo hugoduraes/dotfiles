@@ -6,7 +6,7 @@
 
 [user]
   name = Hugo Durães
-  email = hugoduraes@gmail.com
+  email = {{ git_email }}
 
 [credential]
   helper = osxkeychain
