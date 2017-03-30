@@ -25,5 +25,5 @@ brew install ansible
 ```
 git clone https://github.com/hugoduraes/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-./install
+./install <host> // possible values: personal, work
 ```
