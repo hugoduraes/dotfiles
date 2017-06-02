@@ -1,6 +1,7 @@
 "*":
   core:
     allowPendingPaneItems: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "metrics"
       "atom-linter-node-dependencies"
