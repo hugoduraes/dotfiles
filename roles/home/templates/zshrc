@@ -42,3 +42,23 @@ add-zsh-hook chpwd load-nvmrc
 
 # Activate ZSH completetions
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+##
+# User functions
+##
+
+reset_deps () {
+    if [ -f "package.json" ]; then
+        echo "Clearing node_modules && jspm_packages and reinstalling..."
+        rm -rf node_modules jspm_packages && npm install
+    else
+        echo "No package.json. Skipping npm install."
+    fi
+
+    if [ -f "bower.json" ]; then
+        echo "Clearing bower_components and reinstalling..."
+        rm -rf bower_components && bower install
+    else
+        echo "No bower.json. Skipping bower install."
+    fi
+}
