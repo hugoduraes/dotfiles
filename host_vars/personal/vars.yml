@@ -1,0 +1,4 @@
+---
+git_email: "{{ vault_git_email }}"
+
+computer_name: "{{ vault_computer_name }}"

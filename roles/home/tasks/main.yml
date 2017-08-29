@@ -1,6 +1,6 @@
 ---
-- include: nvm.yml  
-  
+- import_tasks: nvm.yml
+
 - name: create development folder
   file: path=~/Development state=directory
 
@@ -28,9 +28,16 @@
   template: src=templates/finicky.js dest=~/.finicky.js
   when: not finicky.stat.exists
 
+- name: look for atom config directory
+  stat: path=~/.atom
+  register: atom
+
+- name: create atom config directory
+  file: path=~/.atom state=directory
+
 - name: link atom config file
   file: src={{ playbook_dir }}/configs/atom/config.cson dest=~/.atom/config.cson state=link force=yes
-  
+
 - name: set zsh as default shell
   shell: chsh -s /bin/zsh
   become: true

@@ -13,21 +13,28 @@
     - httpie
     - ssh-copy-id
     - wget
-    - yarn
     - zsh
     - zsh-completions
+    - jq
 
 - name: install apps with homebrew cask
   homebrew_cask: name={{ item }} state=present
   with_items:
+    - 1password
     - atom
+    - dropbox
     - finicky
+    - font-fira-code
+    - font-meslo-for-powerline
     - google-chrome
+    - hipchat
     - iterm2
+    - postman
     - skype
+    - slack
     - sourcetree
-    - spectacle
     - spotify
+    - whatsapp
 
 - name: cleanup homebrew packages
   command: brew cleanup

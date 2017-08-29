@@ -7,7 +7,7 @@ Install [Homebrew](http://brew.sh):
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-    
+
 Install [Homebrew Cask](https://caskroom.github.io):
 
 ```

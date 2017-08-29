@@ -6,12 +6,24 @@
       "metrics"
       "atom-linter-node-dependencies"
       "whitespace"
+      "js-hyperclick"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.orig"
     ]
     telemetryConsent: "limited"
   docblockr:
     param_description: false
     return_description: false
   editor:
+    fontFamily: "FiraCode-Retina"
     fontSize: 11
     invisibles: {}
     preferredLineLength: 100
@@ -34,8 +46,7 @@
     fixOnSave: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   minimap:

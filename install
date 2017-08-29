@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$1" != "" ]; then
-    ansible-playbook main.yml --user=$(whoami) --ask-sudo-pass --ask-vault-pass -l $1
+  ansible-playbook main.yml --user=$(whoami) --ask-become-pass --ask-vault-pass -l $1
 else
-    ansible-playbook main.yml --user=$(whoami) --ask-sudo-pass --ask-vault-pass
+  ansible-playbook main.yml --user=$(whoami) --ask-become-pass --ask-vault-pass
 fi
