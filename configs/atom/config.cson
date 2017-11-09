@@ -6,7 +6,6 @@
       "metrics"
       "atom-linter-node-dependencies"
       "whitespace"
-      "js-hyperclick"
     ]
     ignoredNames: [
       ".git"
@@ -44,6 +43,7 @@
   linter: {}
   "linter-eslint":
     fixOnSave: true
+    lintHtmlFiles: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
   "linter-ui-default": {}
