@@ -46,7 +46,8 @@
     lintHtmlFiles: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:

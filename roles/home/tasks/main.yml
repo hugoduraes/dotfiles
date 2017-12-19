@@ -20,6 +20,9 @@
     - gitignore
     - zshrc
 
+- name: enable npm auto completions
+  shell: npm completion >> ~/.zshrc
+
 - name: look for finicky dotfile
   stat: path=~/.finicky.js
   register: finicky
