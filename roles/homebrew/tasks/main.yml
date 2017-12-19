@@ -5,37 +5,13 @@
 - name: tap fonts
   homebrew_tap: tap=caskroom/fonts state=present
 
-- name: install libraries with homebrew
+- name: install packages with homebrew
   homebrew: name={{ item }} state=latest
-  with_items:
-    - curl
-    - git
-    - httpie
-    - ssh-copy-id
-    - wget
-    - zsh
-    - zsh-completions
-    - jq
+  with_items: "{{ homebrew_packages }}"
 
 - name: install apps with homebrew cask
   homebrew_cask: name={{ item }} state=present
-  with_items:
-    - 1password
-    - atom
-    - dropbox
-    - finicky
-    - font-fira-code
-    - font-meslo-for-powerline
-    - google-chrome
-    - hipchat
-    - iterm2
-    - postman
-    - skype
-    - slack
-    - sourcetree
-    - spotify
-    - vnc-viewer
-    - whatsapp
+  with_items: "{{ homebrew_casks }}"
 
 - name: cleanup homebrew packages
   command: brew cleanup

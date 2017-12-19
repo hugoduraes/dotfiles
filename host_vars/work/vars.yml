@@ -2,3 +2,33 @@
 git_email: "{{ vault_git_email }}"
 
 computer_name: "{{ vault_computer_name }}"
+
+homebrew_packages:
+  - awscli
+  - curl
+  - git
+  - httpie
+  - ssh-copy-id
+  - wget
+  - zsh
+  - zsh-completions
+  - jq
+
+homebrew_casks:
+  - 1password
+  - atom
+  - docker
+  - dropbox
+  - finicky
+  - font-fira-code
+  - font-meslo-for-powerline
+  - google-chrome
+  - hipchat
+  - iterm2
+  - postman
+  - skype
+  - slack
+  - sourcetree
+  - spotify
+  - vnc-viewer
+  - whatsapp
