@@ -7,28 +7,33 @@ homebrew_packages:
   - awscli
   - curl
   - git
+  - git-standup
   - httpie
+  - jq
   - ssh-copy-id
+  - telnet
   - wget
   - zsh
   - zsh-completions
-  - jq
 
 homebrew_casks:
   - 1password
-  - atom
   - docker
   - dropbox
   - finicky
+  - firefox
   - font-fira-code
   - font-meslo-for-powerline
   - google-chrome
-  - hipchat
+  - intellij-idea
   - iterm2
+  - java8
   - postman
   - skype
   - slack
   - sourcetree
   - spotify
   - vnc-viewer
+  - vscode
+  - visual-studio-code
   - whatsapp
