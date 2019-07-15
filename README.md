@@ -8,12 +8,6 @@ Install [Homebrew](http://brew.sh):
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install [Homebrew Cask](https://caskroom.github.io):
-
-```
-brew tap caskroom/cask
-```
-
 Install [Ansible](https://www.ansible.com/get-started):
 
 ```
