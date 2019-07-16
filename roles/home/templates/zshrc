@@ -21,12 +21,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 ##
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR=/usr/bin/nano
-else
-  export EDITOR=/usr/bin/nano
-fi
+# Add PATH
+PYTHON_USER_BASE_PATH=$(python -m site --user-base)
+export PATH=$PATH:$PYTHON_USER_BASE_PATH/bin
 
 # Aliases
 [ -f "$HOME/.aliases" ] && [ -r "$HOME/.aliases" ] && . "$HOME/.aliases";
@@ -56,22 +53,9 @@ load-nvmrc
 # Activate ZSH completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-##
-# User functions
-##
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 
-reset_deps () {
-    if [ -f "package.json" ]; then
-        echo "Clearing node_modules && jspm_packages and reinstalling..."
-        rm -rf node_modules jspm_packages && npm install
-    else
-        echo "No package.json. Skipping npm install."
-    fi
-
-    if [ -f "bower.json" ]; then
-        echo "Clearing bower_components and reinstalling..."
-        rm -rf bower_components && bower install
-    else
-        echo "No bower.json. Skipping bower install."
-    fi
-}
+# added by travis gem
+[ -f /Users/hugoduraes/.travis/travis.sh ] && source /Users/hugoduraes/.travis/travis.sh
