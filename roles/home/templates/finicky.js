@@ -1,10 +1,22 @@
-finicky.setDefaultBrowser('com.apple.safari')
+'use strict';
 
-// Open Spotify links in client
-finicky.onUrl(function (url, opts) {
-  if (url.match(/^https?:\/\/open\.spotify\.com/)) {
-    return {
-      bundleIdentifier: 'com.spotify.client'
+module.exports = {
+  defaultBrowser: "Safari",
+  handlers: [
+    {
+      match: finicky.matchDomains([
+        "tui.com",
+        "jsoneditoronline.org",
+        "bluejeans.com",
+        "zpl.io",
+        "loomio.org",
+        "docs.google.com"
+      ]),
+      browser: "Firefox"
+    },
+    {
+      match: /(tuigroup|tui-mobilityhub|tuimobilityhub|mindera|dynatrace|contentful|newrelic|aws\.amazon|beanstalk|zeplin)/,
+      browser: "Firefox"
     }
-  }
-});
+  ]
+};
