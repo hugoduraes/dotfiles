@@ -3,6 +3,9 @@
 
 [alias]
   glog = log --graph --decorate --all
+  tag-be-gone = "!f() { local r=\"${1}\" ; shift ; git tag -d \"${@}\" && \
+    git push --delete \"${r}\"  \"${@}\" ; \
+  } ; f";
 
 [user]
   name = Hugo Durães
