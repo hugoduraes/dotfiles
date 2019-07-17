@@ -20,3 +20,15 @@
       git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
     ) && . "$NVM_DIR/nvm.sh"
   when: nvm.stat.exists
+
+- name: look for installed node default version
+  shell: . "$HOME/.nvm/nvm.sh" && nvm list default
+  register: default_node_check
+  failed_when: default_node_check.rc != 3 # nvm exits with error code 3 when there's no default version installed
+
+- name: install node latest lts and npm
+  shell: . "$HOME/.nvm/nvm.sh" && nvm install --lts && nvm install-latest-npm
+  when: default_node_check.stdout.find('N/A') != -1
+
+- name: enable npm auto completions
+  shell: . "$HOME/.nvm/nvm.sh" && npm completion >> ~/.zshrc

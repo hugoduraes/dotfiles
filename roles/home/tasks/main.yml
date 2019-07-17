@@ -1,6 +1,4 @@
 ---
-- import_tasks: nvm.yml
-
 - name: create development folder
   file: path=~/Development state=directory
 
@@ -20,9 +18,6 @@
     - gitignore
     - zshrc
 
-- name: enable npm auto completions
-  shell: npm completion >> ~/.zshrc
-
 - name: look for finicky dotfile
   stat: path=~/.finicky.js
   register: finicky
@@ -34,3 +29,5 @@
 - name: set zsh as default shell
   shell: chsh -s /bin/zsh
   become: true
+
+- import_tasks: nvm.yml
