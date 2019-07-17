@@ -6,8 +6,7 @@
   homebrew_tap: tap=caskroom/fonts state=present
 
 - name: install packages with homebrew
-  homebrew: name={{ item }} state=latest
-  with_items: "{{ homebrew_packages }}"
+  homebrew: name={{ homebrew_packages }} state=latest
 
 - name: install apps with homebrew cask
   homebrew_cask: name={{ item }} state=present
