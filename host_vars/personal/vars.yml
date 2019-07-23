@@ -16,7 +16,6 @@ homebrew_packages:
 
 homebrew_casks:
   - 1password
-  - atom
   - docker
   - dropbox
   - finicky
@@ -24,9 +23,10 @@ homebrew_casks:
   - font-fira-code
   - font-meslo-for-powerline
   - google-chrome
+  - intellij-idea
   - iterm2
-  - skype
   - slack
   - sourcetree
   - spotify
+  - visual-studio-code
   - whatsapp
