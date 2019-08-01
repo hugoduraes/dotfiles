@@ -10,6 +10,7 @@ homebrew_packages:
   - httpie
   - ssh-copy-id
   - wget
+  - yarn
   - zsh
   - zsh-completions
   - jq
