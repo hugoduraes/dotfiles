@@ -3,10 +3,10 @@
   shell: osascript -e 'tell application "System Preferences" to quit'
 
 - name: set computer name
-  shell: scutil --set ComputerName "{{ vault_computer_name }}"
-    && scutil --set HostName "{{ vault_computer_name }}"
-    && scutil --set LocalHostName "{{ vault_computer_name }}"
-    && defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "{{ vault_computer_name }}"
+  shell: scutil --set ComputerName "{{ computer_name }}"
+    && scutil --set HostName "{{ computer_name }}"
+    && scutil --set LocalHostName "{{ computer_name }}"
+    && defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "{{ computer_name }}"
   become: true
 
 - name: disable macos dashboard
