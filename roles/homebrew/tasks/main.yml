@@ -5,6 +5,9 @@
 - name: tap fonts
   homebrew_tap: tap=caskroom/fonts state=present
 
+- name: tap fonts
+  homebrew_tap: tap=aws/tap state=present
+
 - name: install packages with homebrew
   homebrew: name={{ homebrew_packages }} state=latest
 

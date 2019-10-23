@@ -5,11 +5,13 @@ computer_name: "{{ vault_computer_name }}"
 
 homebrew_packages:
   - awscli
+  - aws-sam-cli
   - curl
   - git
   - git-standup
   - httpie
   - jq
+  - pipenv
   - ssh-copy-id
   - telnet
   - wget
