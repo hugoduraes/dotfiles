@@ -6,12 +6,14 @@ computer_name: "{{ vault_computer_name }}"
 homebrew_packages:
   - awscli
   - aws-sam-cli
+  - cfn-lint
   - curl
   - git
   - git-standup
   - httpie
   - jq
   - pipenv
+  - speedtest
   - ssh-copy-id
   - telnet
   - wget
@@ -22,6 +24,7 @@ homebrew_packages:
 homebrew_casks:
   - 1password
   - adoptopenjdk8
+  - charles
   - docker
   - dropbox
   - finicky
@@ -31,11 +34,16 @@ homebrew_casks:
   - google-chrome
   - intellij-idea
   - iterm2
+  - lulu
+  - mysqlworkbench
+  - notion
+  - openvpn-connect
+  - oversight
   - postman
-  - skype
   - slack
   - sourcetree
   - spotify
   - vnc-viewer
   - visual-studio-code
   - whatsapp
+  - zoomus

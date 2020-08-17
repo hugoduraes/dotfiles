@@ -8,6 +8,7 @@ homebrew_packages:
   - curl
   - git
   - httpie
+  - speedtest
   - ssh-copy-id
   - wget
   - yarn
@@ -26,8 +27,12 @@ homebrew_casks:
   - google-chrome
   - intellij-idea
   - iterm2
+  - lulu
+  - notion
+  - oversight
   - slack
   - sourcetree
   - spotify
   - visual-studio-code
   - whatsapp
+  - zoomus
