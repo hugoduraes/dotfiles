@@ -3,9 +3,9 @@
   homebrew: update_homebrew=yes
 
 - name: tap fonts
-  homebrew_tap: tap=caskroom/fonts state=present
+  homebrew_tap: tap=homebrew/cask-fonts state=present
 
-- name: tap fonts
+- name: tap aws
   homebrew_tap: tap=aws/tap state=present
 
 - name: install packages with homebrew

@@ -21,10 +21,11 @@
 - name: look for finicky dotfile
   stat: path=~/.finicky.js
   register: finicky
+  when: inventory_hostname == 'work'
 
 - name: deploy finicky dotfile
   template: src=templates/finicky.js dest=~/.finicky.js
-  when: not finicky.stat.exists
+  when: inventory_hostname == 'work' and not finicky.stat.exists
 
 - name: set zsh as default shell
   shell: chsh -s /bin/zsh

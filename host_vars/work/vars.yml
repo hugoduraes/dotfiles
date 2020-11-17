@@ -12,10 +12,12 @@ homebrew_packages:
   - git-standup
   - httpie
   - jq
+  - openconnect
   - pipenv
-  - speedtest
+  - speedtest-cli
   - ssh-copy-id
   - telnet
+  - vault
   - wget
   - yarn
   - zsh
@@ -23,7 +25,6 @@ homebrew_packages:
 
 homebrew_casks:
   - 1password
-  - adoptopenjdk8
   - charles
   - docker
   - dropbox
@@ -32,7 +33,6 @@ homebrew_casks:
   - font-fira-code
   - font-meslo-for-powerline
   - google-chrome
-  - intellij-idea
   - iterm2
   - lulu
   - mysqlworkbench
@@ -43,7 +43,7 @@ homebrew_casks:
   - slack
   - sourcetree
   - spotify
-  - vnc-viewer
+  - tweetbot
   - visual-studio-code
   - whatsapp
   - zoomus

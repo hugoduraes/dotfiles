@@ -5,22 +5,23 @@ computer_name: "{{ vault_computer_name }}"
 
 homebrew_packages:
   - awscli
+  - aws-sam-cli
+  - cfn-lint
   - curl
   - git
+  - jq
   - httpie
-  - speedtest
+  - speedtest-cli
   - ssh-copy-id
   - wget
   - yarn
   - zsh
   - zsh-completions
-  - jq
 
 homebrew_casks:
   - 1password
   - docker
   - dropbox
-  - finicky
   - firefox
   - font-fira-code
   - font-meslo-for-powerline
@@ -33,6 +34,8 @@ homebrew_casks:
   - slack
   - sourcetree
   - spotify
+  - tweetbot
   - visual-studio-code
+  - vlc
   - whatsapp
   - zoomus
