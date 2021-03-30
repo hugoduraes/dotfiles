@@ -9,14 +9,15 @@ homebrew_packages:
   - cfn-lint
   - curl
   - git
-  - jq
   - httpie
+  - jq
   - speedtest-cli
   - ssh-copy-id
   - wget
   - yarn
   - zsh
   - zsh-completions
+  - zsh-syntax-highlighting
 
 homebrew_casks:
   - 1password
@@ -24,6 +25,7 @@ homebrew_casks:
   - dropbox
   - firefox
   - font-fira-code
+  - font-jetbrains-mono
   - font-meslo-for-powerline
   - google-chrome
   - intellij-idea
@@ -38,4 +40,4 @@ homebrew_casks:
   - visual-studio-code
   - vlc
   - whatsapp
-  - zoomus
+  - zoom

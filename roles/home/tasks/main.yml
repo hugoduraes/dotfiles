@@ -27,6 +27,11 @@
   template: src=templates/finicky.js dest=~/.finicky.js
   when: inventory_hostname == 'work' and not finicky.stat.exists
 
+- name: install zsh autosuggestions
+  ansible.builtin.git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 - name: set zsh as default shell
   shell: chsh -s /bin/zsh
   become: true

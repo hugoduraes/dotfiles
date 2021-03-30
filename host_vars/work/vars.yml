@@ -9,41 +9,35 @@ homebrew_packages:
   - cfn-lint
   - curl
   - git
-  - git-standup
   - httpie
   - jq
-  - openconnect
-  - pipenv
   - speedtest-cli
   - ssh-copy-id
   - telnet
-  - vault
   - wget
   - yarn
   - zsh
   - zsh-completions
+  - zsh-syntax-highlighting
 
 homebrew_casks:
   - 1password
-  - charles
   - docker
   - dropbox
   - finicky
   - firefox
   - font-fira-code
+  - font-jetbrains-mono
   - font-meslo-for-powerline
   - google-chrome
   - iterm2
-  - lulu
-  - mysqlworkbench
   - notion
-  - openvpn-connect
-  - oversight
   - postman
   - slack
   - sourcetree
   - spotify
   - tweetbot
   - visual-studio-code
+  - webstorm
   - whatsapp
-  - zoomus
+  - zoom
