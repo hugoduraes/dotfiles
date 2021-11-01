@@ -14,7 +14,6 @@ homebrew_packages:
   - speedtest-cli
   - ssh-copy-id
   - wget
-  - yarn
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
@@ -27,14 +26,12 @@ homebrew_casks:
   - font-fira-code
   - font-jetbrains-mono
   - font-meslo-for-powerline
+  - gitkraken
   - google-chrome
   - intellij-idea
   - iterm2
-  - lulu
-  - notion
-  - oversight
+  - signal
   - slack
-  - sourcetree
   - spotify
   - tweetbot
   - visual-studio-code
