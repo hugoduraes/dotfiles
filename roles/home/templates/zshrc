@@ -40,7 +40,7 @@ export PATH=$PATH:$PYTHON_USER_BASE_PATH/bin
 [ -f "$HOME/.aliases" ] && [ -r "$HOME/.aliases" ] && . "$HOME/.aliases";
 
 # Syntax Highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Read and execute .nvmrc
 autoload -U add-zsh-hook
