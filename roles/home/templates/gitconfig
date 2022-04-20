@@ -20,12 +20,6 @@
 [push]
   default = simple
 
-[merge]
-  tool = opendiff
-
-[mergetool]
-  keepBackup = false
-
 [fetch]
   prune = true
   pruneTags = true
