@@ -29,6 +29,3 @@
 - name: install node latest lts and npm
   shell: . "$HOME/.nvm/nvm.sh" && nvm install --lts && nvm install-latest-npm
   when: default_node_check.stdout.find('N/A') != -1
-
-- name: enable npm auto completions
-  shell: . "$HOME/.nvm/nvm.sh" && npm completion >> ~/.zshrc
