@@ -5,38 +5,38 @@ module.exports = {
   handlers: [
     {
       match: finicky.matchDomains([
-        "127.0.0.1",
-        "localhost",
-        "tui.com",
-        "jsoneditoronline.org",
-        "bluejeans.com",
-        "zpl.io",
-        "www.loomio.org",
-        "docs.google.com",
-        /.*\.dunelm\.io$/,
-        /.*\.dunelm\.com$/,
-        /^wasp/,
-        /.*\.lucidchart\.com$/,
-        /.*\.atlassian\.com$/,
-        /.*\.slack\.com$/,
-        "dunelm.service-now.com",
-        /.*\.absence\.io$/,
-        "bitbucket.org",
-        /.*\.zoom\.us$/,
-        /.*\.teamretro\.com$/,
-        /(.*\.)?auth0\.com$/,
-        /(.*\.)?sentry.io$/,
-        /^dunelmmill.*/,
-        "funretro.io",
-        "metroretro.io",
-        "gitlab.com",
-        /.*\.mimecast\.com$/
+        /device\.sso\.(.*\.)?amazonaws\.com$/
       ]),
-      browser: "Firefox"
+      browser: "com.google.Chrome"
     },
     {
-      match: /(dunelmmcdev|mercer|tuigroup|tui-mobilityhub|tuimobilityhub|mindera|dynatrace|contentful|newrelic|aws\.amazon|beanstalk|zeplin)/,
-      browser: "Firefox"
+      match: finicky.matchDomains([
+        "127.0.0.1",
+        "localhost",
+        "jsoneditoronline.org",
+        "metabase.fidel.uk",
+        /(.*\.)?google\.com$/,
+        /(.*\.)?atlassian\.(net|com)$/,
+        /(.*\.)?slack\.com$/,
+        /(.*\.)?bitbucket\.org$/,
+        /(.*\.)?zoom\.us$/,
+        /(.*\.)?amazon\.com$/,
+        /(.*\.)?notion\.so$/,
+        /(.*\.)?figma\.com$/,
+        /(.*\.)?jamboard\.google\.com$/,
+        /(.*\.)?conceptboard\.com$/,
+        /(.*\.)?qulture\.rocks$/,
+        /(.*\.)?humaans\.io$/,
+        /(.*\.)?xero\.com$/,
+        /(.*\.)?teamtailor\.com$/,
+        /(.*\.)?greenhouse\.io$/,
+        /(.*\.)?amazonaws\.com$/
+      ]),
+      browser: "com.brave.Browser"
+    },
+    {
+      match: /fidellimited|fidelapi/i,
+      browser: "com.brave.Browser",
     }
   ]
 };
