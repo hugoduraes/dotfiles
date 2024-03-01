@@ -21,19 +21,15 @@ homebrew_packages:
 homebrew_casks:
   - 1password
   - docker
-  - dropbox
   - firefox
   - font-fira-code
   - font-jetbrains-mono
   - font-meslo-for-powerline
-  - gitkraken
   - google-chrome
-  - intellij-idea
   - iterm2
   - signal
   - slack
   - spotify
-  - tweetbot
   - visual-studio-code
   - vlc
   - whatsapp
