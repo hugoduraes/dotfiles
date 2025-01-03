@@ -1,0 +1,5 @@
+---
+- name: deploy smb conf
+  template: src=templates/nsmb.conf dest=/etc/nsmb.conf
+  when: inventory_hostname == 'personal'
+  become: true
