@@ -37,3 +37,4 @@
   become: true
 
 - import_tasks: nvm.yml
+  when: inventory_hostname == 'work'
