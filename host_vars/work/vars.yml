@@ -23,7 +23,6 @@ homebrew_packages:
 homebrew_casks:
   - 1password
   - docker
-  - dropbox
   - finicky
   - firefox
   - font-fira-code
@@ -31,13 +30,9 @@ homebrew_casks:
   - font-meslo-for-powerline
   - google-chrome
   - iterm2
-  - notion
   - postman
   - slack
-  - sourcetree
   - spotify
-  - tweetbot
   - visual-studio-code
-  - webstorm
   - whatsapp
   - zoom
