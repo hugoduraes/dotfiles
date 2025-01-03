@@ -14,21 +14,26 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  ansible
+  asdf
+  aws
   brew
   colorize
   colored-man-pages
   docker
+  docker-compose
   git
+  gpg-agent
   history
+  iterm2
   npm
-  nvm
-  yarn
+  terraform
   zsh-autosuggestions
 )
 
 # Plugin options
 NVM_HOMEBREW=$(brew --prefix nvm)
-NVM_AUTOLOAD=1
+zstyle ':omz:plugins:nvm' autoload yes
 
 source $ZSH/oh-my-zsh.sh
 

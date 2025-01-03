@@ -4,40 +4,40 @@ git_email: "{{ vault_git_email }}"
 computer_name: "{{ vault_computer_name }}"
 
 homebrew_packages:
+  - ansible
+  - asdf
   - awscli
-  - aws-sam-cli
-  - cfn-lint
-  - curl
   - git
-  - httpie
   - jq
+  - loop
+  - pearcleaner
   - speedtest-cli
   - ssh-copy-id
-  - telnet
   - wget
-  - yarn
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
 
 homebrew_casks:
   - 1password
-  - docker
-  - dropbox
+  - arc
+  - betterdisplay
+  - chatgpt
+  - dbeaver-community
+  - docker-desktop
   - finicky
-  - firefox
   - font-fira-code
   - font-jetbrains-mono
   - font-meslo-for-powerline
-  - google-chrome
+  - font-sf-mono
+  - granola
   - iterm2
-  - notion
+  - maccy
+  - obsidian
   - postman
+  - signal
   - slack
-  - sourcetree
   - spotify
-  - tweetbot
   - visual-studio-code
-  - webstorm
   - whatsapp
   - zoom
