@@ -4,9 +4,10 @@ git_email: "{{ vault_git_email }}"
 computer_name: "{{ vault_computer_name }}"
 
 homebrew_packages:
-  - curl
-  - docker
+  - ansible
   - git
+  - loop
+  - pearcleaner
   - speedtest-cli
   - ssh-copy-id
   - zsh
@@ -15,12 +16,19 @@ homebrew_packages:
 
 homebrew_casks:
   - 1password
-  - firefox
+  - arc
+  - betterdisplay
+  - chatgpt
+  - docker-desktop
+  - finicky
   - font-fira-code
   - font-jetbrains-mono
   - font-meslo-for-powerline
+  - font-sf-mono
   - iterm2
-  - raycast
+  - maccy
+  - obsidian
+  - postman
   - signal
   - slack
   - spotify
