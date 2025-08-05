@@ -11,12 +11,20 @@
     - ~/.zshrc
 
 - name: deploy dotfiles
-  template: src=../templates/{{ item }} dest=~/.{{ item }}
+  template: src=../templates/{{ item.src }} dest={{ item.dest }}
   with_items:
-    - aliases
-    - gitconfig
-    - gitignore
-    - zshrc
+    - src: aliases
+      dest: ~/.aliases
+    - src: gitconfig
+      dest: ~/.gitconfig
+    - src: gitignore
+      dest: ~/.gitignore
+    - src: zshrc
+      dest: ~/.zshrc
+    - src: ghostty
+      dest: ~/.config/ghostty/config
+    - src: ssh_config
+      dest: ~/.ssh/config
 
 - name: look for finicky dotfile
   stat: path=~/.finicky.js

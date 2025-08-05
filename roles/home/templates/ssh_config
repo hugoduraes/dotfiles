@@ -1,0 +1,42 @@
+Match Final Exec "echo $TERM | grep -q xterm-ghostty" Host !pihole-secondary,*
+  SetEnv TERM=xterm-256color
+
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/{{ ssh_key }}
+
+Host pve
+  HostName 192.168.10.10
+  User root
+  IdentityFile ~/.ssh/{{ ssh_key }}
+
+Host pihole-primary
+  HostName 192.168.10.5
+  User admin
+  IdentityFile ~/.ssh/pve
+
+Host pihole-secondary
+  HostName 192.168.20.4
+  User sfhd
+  IdentityFile ~/.ssh/pve
+
+Host reverseproxy
+  HostName 192.168.10.14
+  User sfhd
+  IdentityFile ~/.ssh/pve
+
+Host media
+  HostName 192.168.10.15
+  User sfhd
+  IdentityFile ~/.ssh/pve
+
+Host vpn
+  HostName 192.168.10.16
+  User root
+  IdentityFile ~/.ssh/pve
+
+Host harbor
+  HostName 192.168.10.17
+  User root
+  IdentityFile ~/.ssh/pve

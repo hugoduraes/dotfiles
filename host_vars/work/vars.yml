@@ -3,6 +3,8 @@ git_email: "{{ vault_git_email }}"
 
 computer_name: "{{ vault_computer_name }}"
 
+ssh_key: hugoduraes-work-mbp
+
 homebrew_packages:
   - ansible
   - asdf
