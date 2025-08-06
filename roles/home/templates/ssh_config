@@ -1,5 +1,5 @@
-Match Final Exec "echo $TERM | grep -q xterm-ghostty" Host !pihole-secondary,*
-  SetEnv TERM=xterm-256color
+# Match Final Exec "echo $TERM | grep -q xterm-ghostty" Host !pihole-secondary,*
+#  SetEnv TERM=xterm-256color
 
 Host *
   UseKeychain yes

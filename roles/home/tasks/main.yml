@@ -21,8 +21,8 @@
       dest: ~/.gitignore
     - src: zshrc
       dest: ~/.zshrc
-    - src: ghostty
-      dest: ~/.config/ghostty/config
+    # - src: ghostty
+    #   dest: ~/.config/ghostty/config
     - src: ssh_config
       dest: ~/.ssh/config
 
