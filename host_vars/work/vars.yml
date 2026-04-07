@@ -1,20 +1,22 @@
----
 git_email: "{{ vault_git_email }}"
+git_signingkey: "{{ vault_git_signingkey }}"
 
 computer_name: "{{ vault_computer_name }}"
 
 ssh_key: hugoduraes-work-mbp
 
+homebrew_taps: []
+
 homebrew_packages:
   - ansible
   - asdf
   - awscli
+  - awscli-local
   - git
   - jq
-  - loop
-  - pearcleaner
-  - speedtest-cli
+  - pinentry-mac
   - ssh-copy-id
+  - terraform
   - wget
   - zsh
   - zsh-completions
@@ -22,9 +24,9 @@ homebrew_packages:
 
 homebrew_casks:
   - 1password
-  - arc
-  - betterdisplay
   - chatgpt
+  - claude
+  - claude-code
   - dbeaver-community
   - docker-desktop
   - finicky
@@ -34,12 +36,16 @@ homebrew_casks:
   - font-sf-mono
   - granola
   - iterm2
+  - loop
   - maccy
   - obsidian
+  - pearcleaner
   - postman
+  - sbx
   - signal
   - slack
   - spotify
   - visual-studio-code
   - whatsapp
+  - zen
   - zoom

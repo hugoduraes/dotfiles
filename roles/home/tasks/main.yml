@@ -1,4 +1,3 @@
----
 - name: create development folder
   file: path=~/Development state=directory
 
@@ -9,6 +8,7 @@
     - ~/.gitconfig
     - ~/.gitignore
     - ~/.zshrc
+    - ~/.ssh/config
 
 - name: deploy dotfiles
   template: src=../templates/{{ item.src }} dest={{ item.dest }}
@@ -19,21 +19,22 @@
       dest: ~/.gitconfig
     - src: gitignore
       dest: ~/.gitignore
+    - src: gpg-agent.conf
+      dest: ~/.gnupg/gpg-agent.conf
     - src: zshrc
       dest: ~/.zshrc
-    # - src: ghostty
-    #   dest: ~/.config/ghostty/config
     - src: ssh_config
       dest: ~/.ssh/config
+  notify: restart gpg agent
 
 - name: look for finicky dotfile
-  stat: path=~/.finicky.js
-  register: finicky
-  when: inventory_hostname == 'work'
+  ansible.builtin.stat:
+    path: ~/.finicky.ts
+  register: st
 
 - name: deploy finicky dotfile
-  template: src=templates/finicky.js dest=~/.finicky.js
-  when: inventory_hostname == 'work' and not finicky.stat.exists
+  template: src=templates/finicky.ts dest=~/.finicky.ts
+  when: not st.stat.exists
 
 - name: install zsh autosuggestions
   ansible.builtin.git:
@@ -43,6 +44,3 @@
 - name: set zsh as default shell
   shell: chsh -s /bin/zsh
   become: true
-
-- import_tasks: nvm.yml
-  when: inventory_hostname == 'work'

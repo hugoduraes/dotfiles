@@ -1,19 +1,20 @@
----
-- name: update homebrew
-  homebrew: update_homebrew=yes
+- name: tap homebrew repositories
+  community.general.homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_taps }}"
 
-#- name: tap fonts
-#  homebrew_tap: tap=homebrew/cask-fonts state=present
+- name: install homebrew packages
+  community.general.homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ homebrew_packages }}"
 
-#- name: tap aws
-#  homebrew_tap: tap=aws/tap state=present
-
-- name: install packages with homebrew
-  homebrew: name={{ homebrew_packages }} state=latest
-
-- name: install apps with homebrew cask
-  homebrew_cask: name={{ item }} state=present
+- name: install homebrew casks
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+    state: latest
   with_items: "{{ homebrew_casks }}"
 
 - name: cleanup homebrew packages
-  command: brew cleanup
+  ansible.builtin.command: brew cleanup

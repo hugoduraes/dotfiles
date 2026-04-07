@@ -52,8 +52,14 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# Add gpg key
+export GPG_TTY=$(tty)
+
 # Python
 export PATH=$(brew --prefix python)/libexec/bin:$PATH
+
+# Local binaries in PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # Homebrew
 export HOMEBREW_NO_ENV_HINTS=true

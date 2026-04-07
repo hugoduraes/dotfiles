@@ -1,40 +1,44 @@
----
 git_email: "{{ vault_git_email }}"
+git_signingkey: "{{ vault_git_signingkey }}"
 
 computer_name: "{{ vault_computer_name }}"
 
 ssh_key: hugoduraes-personal-mbp
 
+homebrew_taps: []
+
 homebrew_packages:
   - ansible
   - asdf
   - git
-  - loop
-  - pearcleaner
-  - speedtest-cli
+  - pinentry-mac
   - ssh-copy-id
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
 
 homebrew_casks:
-  - 1password
-  - arc
-  - betterdisplay
+  - bitwarden
   - chatgpt
+  - claude
   - docker-desktop
   - finicky
   - font-fira-code
   - font-jetbrains-mono
   - font-meslo-for-powerline
   - font-sf-mono
+  - iina
   - iterm2
+  - loop
   - maccy
   - obsidian
+  - pearcleaner
   - postman
+  - raindropio
   - signal
   - slack
   - spotify
   - visual-studio-code
   - whatsapp
+  - zen
   - zoom

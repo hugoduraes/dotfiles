@@ -1,8 +1,6 @@
----
 - hosts: localhost
 
   roles:
-    - role: system
-    - role: homebrew
     - role: home
+    - role: homebrew
     - role: macos
