@@ -8,12 +8,14 @@
   community.general.homebrew:
     name: "{{ item }}"
     state: latest
+    update_homebrew: true
   with_items: "{{ homebrew_packages }}"
 
 - name: install homebrew casks
   community.general.homebrew_cask:
     name: "{{ item }}"
     state: latest
+    update_homebrew: true
   with_items: "{{ homebrew_casks }}"
 
 - name: cleanup homebrew packages
