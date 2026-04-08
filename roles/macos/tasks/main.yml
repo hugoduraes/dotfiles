@@ -1,8 +1,9 @@
 - name: set computer name
+  become: true
   ansible.builtin.shell: scutil --set ComputerName "{{ computer_name }}"
     && scutil --set HostName "{{ computer_name }}"
     && scutil --set LocalHostName "{{ computer_name }}"
-  become: true
+  when: inventory_hostname != 'work'
 
 # macOS defaults list here:
 # https://macos-defaults.com/
