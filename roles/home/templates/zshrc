@@ -22,14 +22,9 @@ plugins=(
   git
   history
   npm
-  nvm
   yarn
   zsh-autosuggestions
 )
-
-# Plugin options
-NVM_HOMEBREW=$(brew --prefix nvm)
-NVM_AUTOLOAD=1
 
 source $ZSH/oh-my-zsh.sh
 
