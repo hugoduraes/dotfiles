@@ -25,5 +25,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 git clone https://github.com/hugoduraes/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-./install <host> // possible values: personal, work
+ansible-playbook main.yml -l <host> // possible values: personal, work
 ```
