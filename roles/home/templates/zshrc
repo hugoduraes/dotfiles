@@ -19,6 +19,7 @@ plugins=(
   colorize
   colored-man-pages
   docker
+  docker-compose
   git
   history
   npm
