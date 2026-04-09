@@ -5,7 +5,7 @@
 Install [Homebrew](http://brew.sh):
 
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Install [Ansible](https://www.ansible.com/get-started):
@@ -17,7 +17,7 @@ brew install ansible
 Install [oh-my-zsh](https://ohmyz.sh/#install):
 
 ```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Install
