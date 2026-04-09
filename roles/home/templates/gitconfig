@@ -21,6 +21,7 @@
 [push]
   default = simple
   autoSetupRemote = true
+  followTags = true
 
 [fetch]
   prune = true
@@ -33,5 +34,26 @@
 	defaultBranch = main
 
 [commit]
-	gpgsign = true
+  verbose = true
+	gpgSign = true
 
+[tag]
+  gpgSign = true
+
+[rebase]
+  autoStash = true
+  updateRefs = true
+
+[rerere]
+  enabled = true
+  autoupdate = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[status]
+  branch = true
+  showUntrackedFiles = all
+
+[branch]
+  sort = -committerdate
