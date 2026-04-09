@@ -2,7 +2,9 @@
   file: path=~/Development state=directory
 
 - name: deploy dotfiles
-  template: src=../templates/{{ item.src }} dest={{ item.dest }}
+  template:
+    src: "../templates/{{ item.src }}"
+    dest: "{{ item.dest }}"
   with_items:
     - src: aliases
       dest: ~/.aliases
@@ -14,6 +16,8 @@
       dest: ~/.gitignore
     - src: gpg-agent.conf
       dest: ~/.gnupg/gpg-agent.conf
+    - src: npmrc
+      dest: ~/.npmrc
     - src: zshrc
       dest: ~/.zshrc
     - src: ssh_config
@@ -26,7 +30,9 @@
   register: st
 
 - name: deploy finicky dotfile
-  template: src=templates/finicky.ts dest=~/.finicky.ts
+  template:
+    src: "templates/finicky.ts"
+    dest: "~/.finicky.ts"
   when: not st.stat.exists
 
 - name: install zsh autosuggestions
