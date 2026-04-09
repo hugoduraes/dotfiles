@@ -1,0 +1,3 @@
+always_keep_download = no
+# .nvmrc and .node-version support
+legacy_version_file = yes
