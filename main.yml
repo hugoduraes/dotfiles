@@ -2,5 +2,8 @@
 
   roles:
     - role: home
+      tags: home
     - role: homebrew
+      tags: homebrew
     - role: macos
+      tags: macos
