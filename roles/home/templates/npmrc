@@ -1,1 +1,2 @@
-fund=false
+fund=false # disable retrieval of funding information while running npm install
+git-tag-version=false # disable tagging the commit when using the npm version command
