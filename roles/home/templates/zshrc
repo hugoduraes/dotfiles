@@ -65,3 +65,25 @@ export HOMEBREW_NO_ENV_HINTS=true
 
 # XDG Base Directory specification
 export XDG_CONFIG_HOME=$HOME/.config
+
+# Utils
+
+export AWS_SDK_JS_SUPPRESS_MAINTENANCE_MODE_MESSAGE=1
+
+function awslogin() {
+  unset AWS_ACCESS_KEY_ID
+  unset AWS_SECRET_ACCESS_KEY
+  unset AWS_SESSION_TOKEN
+
+  aws sso login --profile "$1"
+  export AWS_PROFILE=$1
+}
+
+function awslogout() {
+  aws sso logout
+
+  unset AWS_ACCESS_KEY_ID
+  unset AWS_SECRET_ACCESS_KEY
+  unset AWS_SESSION_TOKEN
+  unset AWS_PROFILE
+}
