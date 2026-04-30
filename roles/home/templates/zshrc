@@ -66,6 +66,9 @@ export HOMEBREW_NO_ENV_HINTS=true
 # XDG Base Directory specification
 export XDG_CONFIG_HOME=$HOME/.config
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # Utils
 
 export AWS_SDK_JS_SUPPRESS_MAINTENANCE_MODE_MESSAGE=1
