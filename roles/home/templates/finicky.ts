@@ -72,6 +72,7 @@ const privacyMatches = finicky.matchHostnames([
   /(.*\.)?photos\.google\.com$/,
   /(.*\.)?reddit\.com$/,
   /(.*\.)?youtube\.com$/,
+  /(.*\.)?youtu\.be$/,
 ]);
 
 const isContainerUrl = (url: URL) =>
