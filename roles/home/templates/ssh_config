@@ -8,13 +8,13 @@ HostName 192.168.10.10
 User root
 IdentityFile ~/.ssh/{{ ssh_key }}
 
-Host pihole-primary
-HostName 192.168.10.5
-User admin
+Host pihole-main
+HostName 192.168.10.51
+User sfhd
 IdentityFile ~/.ssh/pve
 
-Host pihole-secondary
-HostName 192.168.20.4
+Host pihole-backup
+HostName 192.168.10.52
 User sfhd
 IdentityFile ~/.ssh/pve
 
@@ -26,11 +26,6 @@ IdentityFile ~/.ssh/pve
 Host media
 HostName 192.168.10.15
 User sfhd
-IdentityFile ~/.ssh/pve
-
-Host vpn
-HostName 192.168.10.16
-User root
 IdentityFile ~/.ssh/pve
 
 Host harbor
